@@ -28,5 +28,8 @@ function handleCLikBtn(target){
     console.log(discount);
     document.getElementById('discount').innerText= discount;
 
-    
+    // calculate the grand total
+    let final = total - discount;
+    console.log(final);
+    document.getElementById('grandtotal').innerText = final;
 }
