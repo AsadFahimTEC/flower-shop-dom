@@ -1,3 +1,3 @@
 function handleCLikBtn(target){
-    console.log(target);
+    console.log(target.parentNode);
 }
