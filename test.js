@@ -1,6 +1,7 @@
 // intialized global  variable
 let total = 0;
 
+
 function handleCLikBtn(target){
       // get reference of selected items
       const selectedItems = document.getElementById('selected-items');
@@ -15,8 +16,17 @@ function handleCLikBtn(target){
 
     const price = target.parentNode.childNodes[5].innerText.split(" ")[1];
 
+
     // calculate the total
     total = parseInt(total) + parseInt(price);
     console.log(total);
     document.getElementById('total').innerText= total;
+
+    // calculate the discount
+    let discount = 0.2;
+    discount = total*discount;
+    console.log(discount);
+    document.getElementById('discount').innerText= discount;
+
+    
 }
