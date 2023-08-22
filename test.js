@@ -1,3 +1,4 @@
 function handleCLikBtn(target){
-    console.log(target.parentNode.childNodes[3].innerText);
+    const itemName = target.parentNode.childNodes[3].innerText;
+    console.log(itemName);
 }
